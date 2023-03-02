@@ -16,8 +16,8 @@ return new class extends Migration
         Schema::create('certificaciones', function (Blueprint $table) {
             $table->increments('idCertificacion');
             $table->string('nombreCerfiticacion');
-            $table->enum('numeroEstudiantes');
-            $table->string('observciones ');
+            $table->string('numeroEstudiantes');
+            $table->string('observaciones');
             $table->string('status');
             $table->integer('idPersonalAcademico')->unsigned();
             $table->foreign('idPersonalAcademico')->references('idPersonalAcademico')->on('personal_academicos');

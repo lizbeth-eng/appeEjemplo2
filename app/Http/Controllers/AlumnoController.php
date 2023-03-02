@@ -60,10 +60,10 @@ class AlumnoController extends Controller
       public function createUpdateAlumno(Request $request, $alumno){
         if($alumno->idAlumno != null){
             AlumnoModel::where('idAlumno', $alumno->idAlumno)->update([
-                'nombre'     => $request->get('nombre'),
-                'apellidoPaterno' => $request->get('apellidoPaterno'),
+                'nombre'           => $request->get('nombre'),
+                'apellidoPaterno'  => $request->get('apellidoPaterno'),
                 'numeroControl'    => $request->get("numeroControl"),
-                'modalidad'    => $request->get("modalidad"),
+                'modalidad'        => $request->get("modalidad"),
                 ]);
                 return $docente;
             }
@@ -72,7 +72,7 @@ class AlumnoController extends Controller
         $alumno->apellidoPaterno=$request->apellidoPaterno;
         $alumno->apellidoMaterno=$request->apellidoMaterno;
         $alumno->numeroControl=$request->numeroControl;
-        $alumno->Modalidad=$request->modalidad;
+        $alumno->modalidad=$request->modalidad;
         $alumno->save();
         return $alumno;
    

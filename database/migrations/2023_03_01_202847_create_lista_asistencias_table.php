@@ -19,7 +19,7 @@ return new class extends Migration
             $table->foreign('idPersonalAcademico')->references('idPersonalAcademico')->on('personal_academicos');
             $table->datetime('fecha');
             $table->integer('idCicloEscolar')->unsigned();
-            $table->foreign('idCicloEscolar')->references('idCicloEscolar')->on('cicloescolares');
+            $table->foreign('idCicloEscolar')->references('idCicloEscolar')->on('ciclo_escolares');
             $table->string('asistencia');
             $table->integer('idActa')->unsigned();
             $table->foreign('idActa')->references('idActa')->on('actas');

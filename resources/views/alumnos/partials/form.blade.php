@@ -25,7 +25,7 @@
         <div class="col-12">
         <div class="form-group">
         <label for="">Modalidad</label>
-        <input type="text"  class="form-control" name="modalidas" value="{{(isset($alumno))?$alumno->modalidad:old('modalidad')}}" required>
+        <input type="text"  class="form-control" name="modalidad" value="{{(isset($alumno))?$alumno->modalidad:old('modalidad')}}" required>
         </div>
         </div>
         </div>

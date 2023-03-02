@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('actas', function (Blueprint $table) {
-            $table->increments(idActa);
+            $table->increments('idActa');
             $table->double('numeroActa');
             $table->datatime('fecha');
             $table->timestamps();

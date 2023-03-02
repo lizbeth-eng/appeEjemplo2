@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('intercambio_pila', function (Blueprint $table) {
             $table->increments('idIntercambio');
-            $table->emun('numeroEstudiante');
+            $table->string('numeroEstudiante');
             $table->string('observaciones');
             $table->integer('idGrupo')->unsigned();
             $table->foreign('idGrupo')->references('idGrupo')->on('grupos');
